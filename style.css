@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.main{
+    display: flex;
+    
+    height: 800px;
+    width: 400px;
+    /* align-items: center;
+    justify-content: center; */
+    margin: auto;
+}
+.child{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    /* transition: 1s ease-in-out; */
+    animation: hii 3s linear infinite alternate;
+    /* animation-play-state: paused; */
+}
+.main:hover .child{
+    animation-play-state: paused;
+    /* animation: hii 3s linear infinite alternate; */
+    /* transform: translateY(700%);
+    transition: 1s ease-in-out; */
+    
+}
+
+@keyframes hii{
+    16%{
+        transform: translateX(300%);
+    }
+    32%{
+        transform: translateX(0%) ;
+    }
+    48%{
+        transform: translateY(250%);
+    }
+    64%{
+        transform: translateX(250%) translateY(250%);
+    }
+    80%{
+        transform: translateX(0%) translateY(250%);
+    }
+    100%{
+        transform: translateY(700%);
+    }
+
+    /* 100%{
+        transform: translateX(100%);
+        background-color: brown;
+    } */
+}
